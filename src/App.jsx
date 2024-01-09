@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import './App.css';
+import Avatar from './components/Avatar';
+// import Avatar from './components/Avatar'
+import Profile from './components/Profile';
+import Profile1 from './components/Profile1';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const name = "Bappa";
+  const age = 27;
+  const size = 'very big';
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <Profile
+      name={name}
+      age={age}
+      size={size}
+       />
+       <br />
+       <Profile1>
+          <Avatar/>
+       </Profile1>
+       <br />
+      <Profile />
     </>
+
+
+
+    // <Avatar
+    // person={{
+    //   name:'bappa',
+    //   imageId: '1bX5QH6'
+    // }}
+    // size={100}
+    // test='bappa'
+    // />
+
   )
 }
 
