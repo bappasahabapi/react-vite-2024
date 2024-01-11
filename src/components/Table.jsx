@@ -1,3 +1,6 @@
+import { tableData } from "../studentData";
+
+
 /* eslint-disable react/prop-types */
 function TableHead() {
   return (
@@ -56,23 +59,28 @@ function TableRowData({ id, name, score, percentage }) {
 }
 
 function TableBody() {
-  const tableData = [
-    { id: "1", name: "Bappa Saha", score: "A+", percentage: "96" },
-    { id: "2", name: "Kappa Roy", score: "A", percentage: "76" },
-    { id: "3", name: "Vayia Singh", score: "A-", percentage: "66" },
-  ];
+
+
   return (
     <>
       <tbody>
-        {/* <!-- className two --> */}
-        <ClassRoomName title="Class Name: One" />
-        <TableRowData id="1" name="Bappa Saha" score="A+" percentage="96" />
-        <TableRowData id="2" name="Kappa Roy" score="A" percentage="76" />
-        <TableRowData id="3" name="Vayia Singh" score="A-" percentage="66" />
-
-        {/* <!-- className two --> */}
-        <ClassRoomName title="Class Name: Two" />
-        <TableRowData id="3" name="Raita Sharma" score="A-" percentage="66" />
+        {tableData.map((classData) => (
+          <>
+            <ClassRoomName
+              key={classData.className}
+              title={`Class Name: ${classData.className}`}
+            />
+            {classData.students.map((student) => (
+              <TableRowData
+                key={student.id}
+                id={student.id}
+                name={student.name}
+                score={student.score}
+                percentage={student.percentage}
+              />
+            ))}
+          </>
+        ))}
       </tbody>
     </>
   );
