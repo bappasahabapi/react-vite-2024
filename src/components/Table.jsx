@@ -62,8 +62,6 @@ function TableBody() {
     { id: "3", name: "Vayia Singh", score: "A-", percentage: "66" },
   ];
   return (
-
-    
     <>
       <tbody>
         {/* <!-- className two --> */}
