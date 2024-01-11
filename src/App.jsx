@@ -15,15 +15,15 @@ function App() {
     <>
 
       <Profile
-      name={name}
-      age={age}
-      size={size}
-       />
-       <br />
-       <Profile1>
-          <Avatar/>
-       </Profile1>
-       <br />
+        name={name}
+        age={age}
+        size={size}
+      />
+      <br />
+      <Profile1>
+        <Avatar />
+      </Profile1>
+      <br />
       <Profile />
     </>
 
