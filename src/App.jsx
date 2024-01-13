@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Gallery from './Example1'
+import Gallery2 from './Example2'
+import Gallery3 from './Example3'
+import TodoClass from './Todo/TodoClass'
+import Todo from './Todo/TodoFunction'
+import RefactorTodo from './Todo/TodoRefactor'
+import TodoUser from './Todo/TodoUser'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div >
+      <h3>Type-1</h3>
+      <div style={{display:'flex', gap:'20px', width:'100%'}}>
+      <Gallery/> 
+      <Gallery2/> 
+      <Gallery3/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <br />
+      <h3>Type-2</h3>
+      <b> Class and Functional</b>
+      <div style={{display:'flex', gap:'20px', width:'100%'}}>
+        <TodoClass/>
+        <Todo/>
+        <RefactorTodo/>
+        <TodoUser/>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+ 
+       
+    </div>
   )
 }
 
