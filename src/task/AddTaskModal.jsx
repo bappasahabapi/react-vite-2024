@@ -94,7 +94,7 @@ export default function AddTaskModal({ onSave }) {
           </div>
           <div className="mt-16 flex justify-center gap-6 lg:mt-20">
             <button
-            //   type="submit"
+              type="submit"
               onClick={() => onSave(task)}
               className="rounded bg-green-600 px-4 py-2 text-white transition-all hover:opacity-80"
             >
