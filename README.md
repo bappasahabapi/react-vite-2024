@@ -1,5 +1,7 @@
 `npm run dev`
 
+![Alt text](./tasker.png)
+
 ##
 
  আমি যখন `Edit button এ`  `click` করলাম, তখন `parent component` থেকে আসা `onEdit()` ফাংশনটি 
