@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { FaStar } from "react-icons/fa";
-export default function TaskList({ tasks,onEdit }) {
+export default function TaskList({ tasks,onEdit,onDelete }) {
   // console.log(tasks)  // return an array
 
   return (
@@ -63,7 +63,7 @@ export default function TaskList({ tasks,onEdit }) {
                 <td className="text-center">{task.priority}</td>
                 <td>
                   <div className="flex items-center justify-center space-x-3">
-                    <button className="text-red-500 hover:bg-gray-500 ">Delete</button>
+                    <button onClick={()=>onDelete(task.id)} className="text-red-500 hover:bg-gray-500 ">Delete</button>
                     <button onClick={()=>onEdit(task)} className="text-blue-500 " >Edit</button>
                   </div>
                 </td>
