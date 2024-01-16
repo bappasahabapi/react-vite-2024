@@ -80,12 +80,41 @@ export default function Header() {
     setBooks(filterSearch)
   }
 
+  // function handleFilter(selectedOption){
+  //   console.log(selectedOption)
+
+  //   const sortedBooks =
+  // }
+  function handleFilter(selectedOption) {
+    let sortedBooks =[];
+  
+    switch (selectedOption) {
+      case "name_asc":
+        sortedBooks = [...books].sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      case "name_desc":
+        sortedBooks = [...books].sort((a, b) => b.title.localeCompare(a.title));
+        break;
+      case "year_asc":
+        sortedBooks = [...books].sort((a, b) => a.year - b.year);
+        break;
+      case "year_desc":
+        sortedBooks = [...books].sort((a, b) => b.year - a.year);
+        break;
+      default:
+        sortedBooks = books;
+        break;
+    }
+  
+    setBooks(sortedBooks);
+  }
+
   return (
     <main className="my-10 lg:my-14">
       <header className="mb-8 lg:mb-10 mx-auto max-w-7xl">
         <div className="mx-auto flex items-end justify-between max-md:max-w-[95%] max-md:flex-col max-md:items-start max-md:space-y-4">
           <SearchAction onSearch={handleSearch} />
-          <Filters />
+          <Filters onFilter={handleFilter} />
         </div>
       </header>
       <BooksContainer books={books} onFav={handleFavorite} />
