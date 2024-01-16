@@ -9,50 +9,84 @@ export default function Header() {
       id: 1,
       title: "JavaScript and JQuery",
       author: "Jon Duckett",
-      price: 62,
+      price: 620,
       rating: 4,
       image: "/src/assets/book.png",
       isFavorite: false,
+      year: 1996
     },
     {
       id: 2,
       title: "Python",
       author: "Jon Duckett",
-      price: 62,
+      price: 120,
       rating: 5,
       image: "/src/assets/book.png",
       isFavorite: true,
+      year: 2000
     },
     {
       id: 3,
-      title: "python",
-      author: "Jon Duckett",
-      price: 62,
+      title: "React",
+      author: "subin",
+      price: 220,
       rating: 2,
       image: "/src/assets/book.png",
       isFavorite: false,
+      year: 2019
     },
     {
       id: 4,
-      title: "JavaScript and JQuery",
+      title: "Html",
       author: "Jon Duckett",
-      price: 62,
+      price: 620,
       rating: 4,
       image: "/src/assets/book.png",
       isFavorite: true,
+      year: 2017
     },
     {
       id: 5,
       title: "JavaScript and JQuery",
       author: "Jon Duckett",
+      price: 520,
+      rating: 4,
+      image: "/src/assets/book.png",
+      isFavorite: false,
+      year: 2016, 
+    },
+    {
+      id: 6,
+      title: "Java",
+      author: "Jon Duckett",
+      price: 420,
+      rating: 4,
+      image: "/src/assets/book.png",
+      isFavorite: false,
+      year: 2022, 
+    },
+    {
+      id: 7,
+      title: "JavaScript and JQuery",
+      author: "Jon Duckett",
       price: 62,
       rating: 4,
       image: "/src/assets/book.png",
       isFavorite: false,
+      year: 2014, 
     },
-
-    // Add more books as needed
+    {
+      id: 8,
+      title: "Python",
+      author: "bappa saha",
+      price: 262,
+      rating: 4,
+      image: "/src/assets/book.png",
+      isFavorite: false,
+      year: 2024, 
+    },
   ];
+  
 
   const [books, setBooks] = useState(booksData);
 
