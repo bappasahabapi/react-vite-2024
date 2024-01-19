@@ -2,7 +2,7 @@
 
 `npm run dev`
 
-
+-  [Notes](https://snapdragon-mambo-8cb.notion.site/React-Note-2024-937311c869de4060b21fc37dd2120e33)
 ## React + Vite 2024 
 <br>
 
