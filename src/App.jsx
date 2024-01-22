@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Scoreboard1 from "./Scoreboard1";
+import Scoreboard2 from "./Scoreboard2";
+import Scoreboard3 from "./Scoreboard3";
+import Messenger from "./chat/Messenger";
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div style={{ display: "flex", alignItems:'center', justifyContent:'center', gap:'10px' }}>
+        <div style={{ border: "1px solid black" }}>
+          <Scoreboard1 />
+        </div>
+        <div style={{ border: "1px solid black" }}>
+          <Scoreboard2 />
+        </div>
+        <div style={{ border: "1px solid black" }}>
+          <Scoreboard3 />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <br /> <br />
+      <div style={{ display: "flex", alignItems:'center', justifyContent:'center', gap:'10px' }}>
+        <div style={{ border: "1px solid black" }}>
+         <Messenger/>
+        </div>
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
