@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Counter1 from "./Counter1";
+import Counter2 from "./Counter2";
+import Counter3 from "./Counter3";
+import Counter4 from "./Counter4";
+import Counter5 from "./Counter5";
+import Counter6 from "./Counter6";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <b>State is tied to a position in the render tree</b>
+        <div style={{ display: "flex", gap: "15px" }}>
+          <div style={{ border: "1px solid red" }}>
+            <Counter1 />
+            <Counter1 />
+          </div>
+          <div style={{ border: "1px solid green" }}>
+            <Counter2 />
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <br />
+      <div>
+        <b>Same component at the same position preserves state</b>
+        <div style={{ display: "flex", gap: "15px" }}>
+          <div style={{ border: "1px solid black" }}>
+            <Counter3 />
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <br />
+      <div>
+        <b>Different components at the same position reset state</b>
+        <div style={{ display: "flex", gap: "15px" }}>
+          <div style={{ border: "1px solid black" }}>
+            <Counter4 />
+          </div>
+          <div style={{ border: "1px solid black" }}>
+            <Counter5 />
+          </div>
+          <div style={{ border: "1px solid black" }}>
+            <Counter6 />
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
-
-export default App
