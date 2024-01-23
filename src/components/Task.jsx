@@ -1,36 +1,45 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-export default function Task({ task }) {
+export default function Task({ task, onChangeTask, onDeleteTask }) {
   const [isEditing, setIsEditing] = useState(false);
   let taskContent;
 
   if (isEditing) {
     taskContent = (
       <>
-        <input 
-        value={task.text}
-        
-        />
-        <button onClick={()=>setIsEditing(false)}>Save</button>
+        <input value={task.text} onChange={(e)=>onChangeTask({
+            ...task,
+            text:e.target.value
+        })} />
+        <button onClick={() => setIsEditing(false)}>Save</button>
       </>
     );
   } else {
     taskContent = (
       <>
         {task.text}
-        <button onClick={()=>setIsEditing(true)}>Edit</button>
+        <button onClick={() => setIsEditing(true)}>Edit</button>
       </>
     );
   }
   return (
     <li>
       <label>
-        <input type="checkbox" />
+        <input
+          type="checkbox"
+          checked={task.done}
+          onChange={(e) =>
+            onChangeTask({
+              ...task,
+              done: e.target.checked,
+            })
+          }
+        />
 
         {taskContent}
 
-        <button>Delete</button>
+        <button onClick={() => onDeleteTask(task.id)}>Delete</button>
       </label>
     </li>
   );
