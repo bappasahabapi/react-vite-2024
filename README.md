@@ -2,66 +2,70 @@
 
 `npm run dev`
 
--  [Notes](https://snapdragon-mambo-8cb.notion.site/React-Note-2024-937311c869de4060b21fc37dd2120e33)
-## React + Vite 2024 
-<br>
+## Using useState() Hook.
 
-<details>
-<summary> 1️⃣. Describing UI 🔥 </summary>
-
--  🔥 [1.8-React Props](https://github.com/bappasahabapi/react-vite-2024/tree/r18/1.8-react-props)
--  🔥 [1.9-Rendering List](https://github.com/bappasahabapi/react-vite-2024/tree/r18/1.9-rendering-list)
--  🔥 [r1-Smart-Grade-Task](https://github.com/bappasahabapi/react-vite-2024/tree/r18/task)
-
-</details>
-
-<details>
-<summary> 2️⃣. Adding InterActivity 🔥 </summary>
-
--  🔥 [2.3-Component memory-useState](https://github.com/bappasahabapi/react-vite-2024/tree/r2/2.3-component-memory)
--  🔥 [2.10-Tasker](https://github.com/bappasahabapi/react-vite-2024/tree/r2/2.10-tasker)
--  🔥 [2.10-Tasker Functional](https://github.com/bappasahabapi/react-vite-2024/tree/r2/2.10-tasker-functional)
--  🔥 [r2-Book Search App](https://github.com/bappasahabapi/react-vite-2024/tree/r2/task-book-search)
+- State is maintained like this.
 
 
-</details>
+<b>1. initialTasks</b> which is array of objects `[{}, {}, {}]`
 
-<details>
-<summary> 3️⃣.State Management 🔥 </summary>
+```javascript
 
--  🔥 [2.3-Component memory-useState]()
-
-
-
-</details>
-
-
-##  Main Concept
-[Official Note](https://bappa-saha.web.app/)
-
-- 🔥🔥🔥[stater pack ](https://github.com/bappasahabapi/react-core-concept/tree/starter)
-- 🎮🎮  [2.0-Tic Tac Toy](https://github.com/bappasahabapi/react-core-concept/tree/02/main/tic-tac-toe).**[both dom and react code]**
-
-<h6>📚 React Previous Concept 2019 <a href="https://github.com/bappasahabapi/ReactApp"> Click 👉 link</a></h6> 
---- 
- 
-<details>
-
-<summary>📚 React Main Concepts</summary>
+export const initialTasks = [
+    { id: 0, text: "Visit Kafka Museum", done: true },
+    { id: 1, text: "Watch a puppet show", done: false },
+    { id: 2, text: "Lennon Wall pic", done: false },
+];
 
 
-- 05 🔥 [1.10-Lifting-up-state](https://github.com/bappasahabapi/react-core-concept/tree/1.10-lifting-state-up)
-- 04 🔥 [1.9-Handle React Form](https://github.com/bappasahabapi/react-core-concept/tree/1.9-handle-react-forms)
-- 03 🔥 [1.3-conditional-rendering](https://github.com/bappasahabapi/react-core-concept/tree/1.3-conditional-redering).
-- 02 🔥 [1.2-props](https://github.com/bappasahabapi/raect-manage-forms/tree/1.2-props).
-- 01 🔥 **Handling with multiple inputs in one useState** [1.1-managing multiple input fields](https://github.com/bappasahabapi/raect-manage-forms/tree/1.1-managing-multiple-input-fields).
-<br>
-</details>
+```
+<b>2. Call the useState hook, </b> where tasks = initialTasks. `[{}, {}, {}]`
 
-<details>
+```javascript
 
-<summary>📚 React 2.0 Hooks</summary>
+ const [tasks, setTasks] = useState(initialTasks);
+```
+<b>3. How to update this state using useState Hook</b>
 
-- 06 🔥 [React useState hook](https://github.com/bappasahabapi/react-core-concept/tree/2.0-react-useState-hook)
+- <b>handleAddTask</b>
 
-</details>
+```javascript
+  const handleAddTask = (text) => {
+    //  console.log(text)
+    setTasks([
+      ...tasks,
+      {
+        id: getNextId(tasks),
+        text: text,
+        done: false,
+      },
+    ]);
+  };
+
+```
+- <b>handleChangeTask</b> or update task
+
+```javascript
+  const handleChangeTask = (newSingleTask) => {
+    // console.log(newSingleTask);
+    // setTasks([]) --> ekaneo amra new array diye pathalab map use kore. js main array k mutated kore nai
+    const nextTasks = tasks.map((task) => {
+      if (task.id === newSingleTask.id) {
+        return newSingleTask;
+      } else {
+        return task;
+      }
+    });
+    setTasks(nextTasks);
+  };
+
+```
+- <b>handleDeleteTask</b>
+
+```javascript
+  const handleDeleteTask = (taskId) => {
+    const updatedTask = tasks.filter((task) => task.id !== taskId);
+    setTasks(updatedTask);
+  };
+
+```

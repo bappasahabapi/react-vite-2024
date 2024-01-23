@@ -6,7 +6,7 @@ import { initialTasks } from "./data/tasks";
 
 function App() {
   const [tasks, setTasks] = useState(initialTasks);
-  // amar state jeikane thakbe handler seikhane thakbe
+
 
   const getNextId = (tasksArray) => {
     const maxId = tasksArray.reduce((prev, current) =>
@@ -16,6 +16,7 @@ function App() {
     return maxId + 1;
   };
 
+    //TODO: amar state jeikane thakbe handler seikhane thakbe
   const handleAddTask = (text) => {
     //  console.log(text)
     setTasks([
@@ -30,7 +31,7 @@ function App() {
 
   const handleChangeTask = (newSingleTask) => {
     // console.log(newSingleTask);
-    //todo: setTasks([]) -- ekaneo amra new array diye pathalab map use kore. js main array k mutated kore nai
+    //* todo: setTasks([]) --> ekaneo amra new array diye pathalab map use kore. js main array k mutated kore nai
     const nextTasks = tasks.map((task) => {
       if (task.id === newSingleTask.id) {
         return newSingleTask;
