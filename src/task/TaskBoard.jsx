@@ -16,7 +16,16 @@ export default function TaskBoard() {
   //       "priority":"High",
   //       "isFavorite":true
   //   }
-  const defaultTask = {
+  // const defaultTask = {
+  //   id: crypto.randomUUID(),
+  //   title: "This is test title one",
+  //   description:
+  //     "There is a dreamy boy whose name is Bappa There is a dreamy boy whose name is Bappa There is a dreamy boy whose name is Bappa",
+  //   tags: ["web", "js"],
+  //   priority: "High",
+  //   isFavorite: false,
+  // };
+  const defaultTask =[ {
     id: crypto.randomUUID(),
     title: "This is test title one",
     description:
@@ -24,9 +33,10 @@ export default function TaskBoard() {
     tags: ["web", "js"],
     priority: "High",
     isFavorite: false,
-  };
+  }];
 
-  const [tasks, setTasks] = useState([defaultTask]);
+  const [tasks, setTasks] = useState(defaultTask);
+  // const [tasks, setTasks] = useState([defaultTask]);
   const [showAddModal, setShowAddModal] = useState(false);
   const [taskToUpdate, setTaskToUpdate] = useState(null);
 
