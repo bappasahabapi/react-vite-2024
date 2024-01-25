@@ -1,13 +1,24 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { useTaskDispatch, useTasks } from "../contexts/TaskContext";
+import { getNextId } from "../utils/getNextId";
 
-export default function AddTask({onAdd}) {
+export default function AddTask() {
 
   const [text,setText]=useState('');
+  const tasks =useTasks()
+  const dispatch =useTaskDispatch()
 
-  // const handleChange=(e)=>{
-  //   setText(e.target.value)
-  // }
+  function handleOnAdd(){
+    setText('')
+    dispatch({
+      type:'ADDED',
+      id:getNextId(tasks),
+      text:text
+
+    })
+  }
+
   return (
     <div>
       <>
@@ -15,12 +26,8 @@ export default function AddTask({onAdd}) {
         placeholder="Add task" 
         value={text}
         onChange={(e)=>setText(e.target.value)}
-        // onChange={handleChange}
         />
-        <button onClick={()=>{
-          onAdd(text)
-          setText('')
-          }}>Add</button>
+        <button onClick={handleOnAdd}>Add</button>
       </>
     </div>
   );
