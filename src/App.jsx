@@ -1,12 +1,21 @@
+import Footer from "./Footer";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import MovieList from "./cineplex/MovieList";
 
 function App() {
-
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline">bappa</h1>
+      <Header />
+      <main>
+        <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
+          <Sidebar />
+          <MovieList/>
+        </div>
+      </main>
+      <Footer/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
