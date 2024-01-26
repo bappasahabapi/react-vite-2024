@@ -7,23 +7,37 @@ import Rating from "./Rating";
 import MovieDetailsModal from "./MovieDetailsModal";
 import { MovieContext } from "../context";
 
+import {toast } from 'react-toastify';
+
 export default function MovieCard({ movie }) {
   const [showModal, setShowModal] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState(null);
 
-  const { cartData, setCartData } = useContext(MovieContext); // amra {cartData, setCartData} akare dici
-  // console.log(cartData) // initially amr cart data te kich nai
+  const { state, dispatch } = useContext(MovieContext); // amra {cartData, 
   function handleAddToCart(event, movie) {
     event.stopPropagation();
 
-    const found = cartData.find((item) => {
+    const found = state.cartData.find((item) => {
       return item.id === movie.id;
     });
     if (!found) {
-      // const [cartData, setCartData]=useState([]); array cilo tai [] wise spreed korte hbe
-      setCartData([...cartData, movie]);
+      // setCartData([...state.cartData, movie]);
+      dispatch({
+        type:"ADD_TO_CART",
+        payload:{
+          ...movie
+        }
+      })
+      toast.success(`Movie ${movie.title} added successfully`,{
+        position:'bottom-right',
+        autoClose:2000,
+        // icon:''
+      })
     } else {
-      console.error(`The movie ${movie.title} has already been added to cart`);
+      toast.error(`The movie ${movie.title} has already been added to cart`,{
+        position:'top-right'
+      })
+      // console.error(`The movie ${movie.title} has already been added to cart`);
     }
   }
   function handleModalClose() {

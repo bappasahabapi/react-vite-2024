@@ -1,3 +1,6 @@
-##    Basic vite 
+## Basic vite
 
-`npm run dev`
+- `npm install`
+-  `npm run dev`
+
+![Alt text](./cineplex.png)
