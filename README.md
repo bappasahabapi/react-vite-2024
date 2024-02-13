@@ -2,66 +2,71 @@
 
 `npm run dev`
 
--  [Notes](https://snapdragon-mambo-8cb.notion.site/React-Note-2024-937311c869de4060b21fc37dd2120e33)
-## React + Vite 2024 
-<br>
+## What I implemented
+- Crate Custom  Hooks for fetching Data
+- Create context api
+- Render Image wiht condition
 
-<details>
-<summary> 1️⃣. Describing UI 🔥 </summary>
+-  https://openweathermap.org/current
 
--  🔥 [1.8-React Props](https://github.com/bappasahabapi/react-vite-2024/tree/r18/1.8-react-props)
--  🔥 [1.9-Rendering List](https://github.com/bappasahabapi/react-vite-2024/tree/r18/1.9-rendering-list)
--  🔥 [r1-Smart-Grade-Task](https://github.com/bappasahabapi/react-vite-2024/tree/r18/task)
+- api example
 
-</details>
-
-<details>
-<summary> 2️⃣. Adding InterActivity 🔥 </summary>
-
--  🔥 [2.3-Component memory-useState](https://github.com/bappasahabapi/react-vite-2024/tree/r2/2.3-component-memory)
--  🔥 [2.10-Tasker](https://github.com/bappasahabapi/react-vite-2024/tree/r2/2.10-tasker)
--  🔥 [2.10-Tasker Functional](https://github.com/bappasahabapi/react-vite-2024/tree/r2/2.10-tasker-functional)
--  🔥 [r2-Book Search App](https://github.com/bappasahabapi/react-vite-2024/tree/r2/task-book-search)
+` https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}`
 
 
-</details>
+- Api response json
 
-<details>
-<summary> 3️⃣.State Management 🔥 </summary>
+```json
+                          
+{
+  "coord": {
+    "lon": 10.99,
+    "lat": 44.34
+  },
+  "weather": [
+    {
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 298.48,
+    "feels_like": 298.74,
+    "temp_min": 297.56,
+    "temp_max": 300.05,
+    "pressure": 1015,
+    "humidity": 64,
+    "sea_level": 1015,
+    "grnd_level": 933
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0.62,
+    "deg": 349,
+    "gust": 1.18
+  },
+  "rain": {
+    "1h": 3.16
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1661870592,
+  "sys": {
+    "type": 2,
+    "id": 2075663,
+    "country": "IT",
+    "sunrise": 1661834187,
+    "sunset": 1661882248
+  },
+  "timezone": 7200,
+  "id": 3163858,
+  "name": "Zocca",
+  "cod": 200
+}                        
+                        
+```
 
--  🔥 [2.3-Component memory-useState]()
-
-
-
-</details>
-
-
-##  Main Concept
-[Official Note](https://bappa-saha.web.app/)
-
-- 🔥🔥🔥[stater pack ](https://github.com/bappasahabapi/react-core-concept/tree/starter)
-- 🎮🎮  [2.0-Tic Tac Toy](https://github.com/bappasahabapi/react-core-concept/tree/02/main/tic-tac-toe).**[both dom and react code]**
-
-<h6>📚 React Previous Concept 2019 <a href="https://github.com/bappasahabapi/ReactApp"> Click 👉 link</a></h6> 
---- 
- 
-<details>
-
-<summary>📚 React Main Concepts</summary>
-
-
-- 05 🔥 [1.10-Lifting-up-state](https://github.com/bappasahabapi/react-core-concept/tree/1.10-lifting-state-up)
-- 04 🔥 [1.9-Handle React Form](https://github.com/bappasahabapi/react-core-concept/tree/1.9-handle-react-forms)
-- 03 🔥 [1.3-conditional-rendering](https://github.com/bappasahabapi/react-core-concept/tree/1.3-conditional-redering).
-- 02 🔥 [1.2-props](https://github.com/bappasahabapi/raect-manage-forms/tree/1.2-props).
-- 01 🔥 **Handling with multiple inputs in one useState** [1.1-managing multiple input fields](https://github.com/bappasahabapi/raect-manage-forms/tree/1.1-managing-multiple-input-fields).
-<br>
-</details>
-
-<details>
-
-<summary>📚 React 2.0 Hooks</summary>
-
-- 06 🔥 [React useState hook](https://github.com/bappasahabapi/react-core-concept/tree/2.0-react-useState-hook)
-
-</details>
