@@ -7,7 +7,7 @@ const FavouriteProvider =({children})=>{
 
     const [favourites, setFavourites]=useLocalStorage('favourites',[]);
 
-    const addToFavourite =(latitude,longitude,location)=>{
+    const addToFavourites =(latitude,longitude,location)=>{
         setFavourites([
             ...favourites,
             {latitude:latitude,longitude:longitude,location:location}
@@ -24,7 +24,7 @@ const FavouriteProvider =({children})=>{
     };
 
     return (
-        <FavouriteContext.Provider value={{favourites, addToFavourite,removeFromFavourites}}>
+        <FavouriteContext.Provider value={{favourites, addToFavourites,removeFromFavourites}}>
         {children}
         </FavouriteContext.Provider>
     )
