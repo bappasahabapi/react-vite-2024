@@ -11,7 +11,7 @@ const LoginForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-    setError
+    setError,
   } = useForm();
 
   const navigate = useNavigate();
@@ -19,36 +19,32 @@ const LoginForm = () => {
 
   const submitForm = async (formData) => {
     //1. After get the formData
-    console.log(formData);
-
-    //todo:2. we make an api call which is post call
+    // console.log(formData);
     try {
+      //todo:2. we make an api call which is post call
       const response = await axios.post(
         `${import.meta.env.VITE_SERVER_BASE_URL}/auth/login`,
         formData
       );
-      console.log(response);
-      if(response.status===200){
+      // console.log(response); //{data:{...}}
+      if (response.status === 200) {
+        //todo:3. and it will return Tokens and logged in user info [backed is designed like this]
+        const { token, user } = response.data;
 
-        //todo:3. and it will return Tokens and logged in user info
-        const {token, users}=response.data;
-        const authToken =token.token;
-        const refreshToken =token.refreshToken
-
-        console.log(users,authToken,refreshToken);
-        setAuth({users,authToken,refreshToken});
-        navigate("/")
-
+        if (token) {
+          const authToken = token.token;
+          const refreshToken = token.refreshToken;        // const user = { ...formData };
+          setAuth({ user, authToken, refreshToken }); // const [auth, setAuth] = useState({}); same pattern e update korte hbe setAuth
+          navigate("/");
+        }
       }
-      // const user = { ...formData };
-      // setAuth({ user }); // const [auth, setAuth] = useState({}); same pattern e update korte hbe setAuth
-      // navigate("/");
+
     } catch (error) {
       console.error(error);
-      setError('root.random',{
-        type:'random',
-        message:`User with email ${formData.email} is not found`
-      })
+      setError("root.random", {
+        type: "random",
+        message: `User with email ${formData.email} is not found`,
+      });
     }
   };
 
@@ -87,8 +83,8 @@ const LoginForm = () => {
           placeholder="Enter your password"
         />
       </Field>
-          {/* showing the global error */}
-          <p>{errors?.root?.random?.message}</p>
+      {/* showing the global error */}
+      <p>{errors?.root?.random?.message}</p>
       <Field>
         <button
           className="auth-input bg-lwsGreen font-bold text-deepDark transition-all hover:opacity-90"

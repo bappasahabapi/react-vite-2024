@@ -71,3 +71,45 @@ export default HomePage
 - `cd backed-server` and `npm install` and then run` npm run dev`
 - install axios in frontend for data fetching: `npm install axios`
 - Next create `.env` file and keep the base url here.
+- Now handle the sumit forn using axios
+
+```javascript
+const submitForm = async (formData) => {
+    //1. After get the formData
+    console.log(formData);
+
+    //todo:2. we make an api call which is post call
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_SERVER_BASE_URL}/auth/login`,
+        formData
+      );
+      console.log(response);
+      if (response.status === 200) {
+        //todo:3. and it will return Tokens and logged in user info
+        const { token, user } = response.data;
+
+        if (token) {
+          const authToken = token.token;
+          const refreshToken = token.refreshToken;
+
+          console.log(user, authToken, refreshToken);
+          setAuth({ user, authToken, refreshToken });
+          navigate("/");
+        }
+      }
+      // const user = { ...formData };
+      // setAuth({ user }); // const [auth, setAuth] = useState({}); same pattern e update korte hbe setAuth
+      // navigate("/");
+    } catch (error) {
+      console.error(error);
+      setError("root.random", {
+        type: "random",
+        message: `User with email ${formData.email} is not found`,
+      });
+    }
+  };
+
+```
+
+
