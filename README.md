@@ -66,3 +66,8 @@ export default HomePage
 
 - Now based on this part we make Private Route
 - implement login logout 
+
+**4. Axios and Jwt**
+- `cd backed-server` and `npm install` and then run` npm run dev`
+- install axios in frontend for data fetching: `npm install axios`
+- Next create `.env` file and keep the base url here.
