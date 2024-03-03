@@ -3,7 +3,7 @@ import { api } from "../api";
 import { useAuth } from "./useAuth";
 import axios from "axios";
 
-const useAxios = () => {
+ const useAxios = () => {
   const { auth, setAuth } = useAuth();
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const useAxios = () => {
 
             const refreshToken = auth?.refreshToken;
             const response = await axios.post(
-              `${import.meta.env.VITE_SERVER_BASE_URL}/auth/refreshToken`,
+              `${import.meta.env.VITE_SERVER_BASE_URL}/auth/refresh-token`,
               { refreshToken }
             );
 
@@ -69,4 +69,8 @@ const useAxios = () => {
 
 
   }, [auth?.authToken]);
+
+  return {api}
 };
+
+export default useAxios;

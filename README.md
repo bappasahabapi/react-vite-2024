@@ -29,6 +29,24 @@ Here I install these two packages.
 
 **3. Create Auth Context Provider Route**
 
+- What we get from useAuth hook is
+const {auth}= useAuth()
+
+```json
+{
+    user:{
+        avatar: "uploads/avatar/avatar-1708849386635-121791126.png"
+        bio:""
+        email: "saadh392@mail.com"
+        firstName: "Saad"
+        lastName: "Hasan"
+        id: "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+    },
+    authToken:'jdjflsdjf',
+    refreshToken:'jdjflsd'
+}
+```
+
 - Make the AuthContext and AuthProvider 
 - now set the AuthProvider in the `main.js` file.
 - Next we make a `hook` using these AuthContext and AuthProvider named `useAuth`-> gives {auth, setAuth}
@@ -68,6 +86,8 @@ export default HomePage
 - implement login logout 
 
 **4. Axios and Jwt**
+- Here we dont install jwt package and dot env package . 
+- For access the `.env` file we use `import.meta.env.`
 - `cd backed-server` and `npm install` and then run` npm run dev`
 - install axios in frontend for data fetching: `npm install axios`
 - Next create `.env` file and keep the base url here.
@@ -116,3 +136,21 @@ const submitForm = async (formData) => {
 - Auth token is added to header if and only if by useing interceptors in axios.
 - next we add the authToken to the header for authorization.
 - Thats why we make `useAxios` hook 
+
+-What we get from `auth{} ` is 
+
+```json
+{
+    user:{
+        avatar: "uploads/avatar/avatar-1708849386635-121791126.png"
+        bio:"something"
+        email: "saadh392@mail.com"
+        firstName: "Saad"
+        lastName: "Hasan"
+        id: "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+    },
+    authToken:'jdjflsdjf',
+    refreshToken:'jdjflsd'
+}
+```
+- now make the profile page component
