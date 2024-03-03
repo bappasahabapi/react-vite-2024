@@ -112,4 +112,7 @@ const submitForm = async (formData) => {
 
 ```
 
-
+- Next we extend axios. in api folder
+- Auth token is added to header if and only if by useing interceptors in axios.
+- next we add the authToken to the header for authorization.
+- Thats why we make `useAxios` hook 
