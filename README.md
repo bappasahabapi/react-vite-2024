@@ -154,3 +154,14 @@ const submitForm = async (formData) => {
 }
 ```
 - now make the profile page component
+
+
+**5. Profile Page Bio and Image Handle**
+
+- Implement all state lavel variables to using Reducer
+- Maintain all state lavel variables to `use Reducer.`
+- We make context, provider, hook for profile page .
+
+  - profile actions, profile reducer,profile context, profile provider
+- Through context and provider we pass data using reducer.
+
