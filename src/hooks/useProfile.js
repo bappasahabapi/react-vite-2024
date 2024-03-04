@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import ProfileProvider from "../providers/ProfileProvider"
+import { ProfileContext } from "../context"
 
 export const useProfile = () => {
-  return useContext(ProfileProvider)
+  return useContext(ProfileContext)
 }
 
 // useProfile return the state and dispatch fn for posts 

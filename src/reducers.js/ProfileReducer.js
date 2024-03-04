@@ -5,13 +5,13 @@
 
 import { actions } from "../actions";
 const initialState ={
-    user:null,
+    user: null,
     posts:[],
     loading:false,
     error:null,
 }
 
-const ProfileReducer = (state, action) => {
+const profileReducer = (state, action) => {
     switch (action.type) {
         case actions.profile.DATA_FETCHING:{
             return{
@@ -19,12 +19,14 @@ const ProfileReducer = (state, action) => {
                 loading:true,
             }
         }
+
+        
         case actions.profile.DATA_FETCHED:{
             return{
                 ...state,
                 loading:false,   
+                user:action?.data?.user, //  setUser(response?.data?.user);
                 posts:action.data.posts, // setPosts(response?.data?.posts);
-                user:action.data.user, //  setUser(response?.data?.user);
                 // user:action.payload.user,
             }
         }
@@ -44,4 +46,4 @@ const ProfileReducer = (state, action) => {
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
-export {ProfileReducer,initialState} ;
+export {profileReducer,initialState} ;
