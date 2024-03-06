@@ -164,4 +164,5 @@ const submitForm = async (formData) => {
 
   - profile actions, profile reducer,profile context, profile provider
 - Through context and provider we pass data using reducer.
+- Next we make profile folder and under the profile folder we make components
 
