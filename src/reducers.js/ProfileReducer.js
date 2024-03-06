@@ -37,6 +37,13 @@ const profileReducer = (state, action) => {
                 error:action.error  // setError(error);
             }
         }
+        case actions.profile.USER_DATA_EDITED:{
+            return{
+                ...state,
+                loading:false,
+               user:action.data
+            }
+        }
         default:{
             return state
         }
