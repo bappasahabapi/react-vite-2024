@@ -11,6 +11,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-4. [Defining Routes](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
+1. 🛣️ [Project Organization & File colocation](https://nextjs.org/docs/app/building-your-application/routing/colocation)
+2. 🛣️ [Parallel Routes]()
 
 
