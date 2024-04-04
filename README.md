@@ -8,9 +8,12 @@ yarn dev
 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Gray matter: used for parsing md file to html format  
 
 
-4. [Defining Routes](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
+Install dependencies:
 
+- `npx create-next-app@latest`
+- `yarn add gray-matter remark remark-html`
+- `yarn add @tailwindcss/typography @tailwindcss/aspect-ratio`
 
