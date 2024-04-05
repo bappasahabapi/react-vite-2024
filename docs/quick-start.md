@@ -2,7 +2,7 @@
 title: 'Quick Start'
 date: '2024-03-13'
 parent: null
-order: 2
+order: 0
 author: Brian C
 category: quick-start
 tags:  ["intro", "getting-started"]

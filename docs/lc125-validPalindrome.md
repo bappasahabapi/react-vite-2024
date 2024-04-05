@@ -1,8 +1,7 @@
 ---
 title: 'ValidPalindrome'
 date: '2024-03-12'
-parent: null
-order: 4
+parent: programming
 author: Brian C
 category: leetcode-125
 tags: ["LC-125", "validpalindrome"]
