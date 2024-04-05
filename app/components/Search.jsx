@@ -30,7 +30,7 @@ const Search = ({ docs }) => {
 
 
   function handleCloseSearchResults(e){
-    e.prevent.default();
+    e.preventDefault();
     router.push(e.target.href)
     setTerm("")
   }
