@@ -3,7 +3,7 @@ title: 'Quick Start'
 date: '2024-03-13'
 parent: null
 order: 0
-author: Brian C
+author: Bappa Da 
 category: quick-start
 tags:  ["intro", "getting-started"]
 ---
