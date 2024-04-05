@@ -17,6 +17,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque quibusdam ve
 dolor a illo iusto deserunt voluptate perspiciatis aliquid ad id sed?
 
 ### Code
-```javascript
+
+```ts
+int main(){
+    console.log("banppa")
+    console.log("banppa")
+    console.log("banppa")
+}
 console.log("banppa")
 ```
+
+

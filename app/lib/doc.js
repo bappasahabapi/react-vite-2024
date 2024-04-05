@@ -42,5 +42,22 @@ export function getDocuments() {
     }
     return 0
   });
+};
+
+export async function getDocumentContent(id){
+
+  const fullPath =path.join(postsDirectory,`${id}.md`)
+  const fileContents =fs.readFileSync(fullPath, "utf8")
+  const matterResult =matter(fileContents)
+
+  //todo: Read the content text.
+  const processedContent =await remark().use(html).process(matterResult.content)
+  const contentHtml =processedContent.toString();
+
+  return {
+    id,
+    contentHtml,
+    ...matterResult.data
+  }
 }
 
