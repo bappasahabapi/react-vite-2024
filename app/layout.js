@@ -1,7 +1,10 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+import Link from 'next/link'
+import CustomLink from "./components/CustomLink";
 
 // export const metadata = {
 //   title: "Basic-Routing",
@@ -14,14 +17,32 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <nav className="p-4 border-b border-blue-400  font-semibold cursor-pointer  ">
         <ul className=" flex gap-5 ">
-          <li>Home</li>
-          <li>About</li>
-          <li> <a className=" bg-indigo-300   " href="http://localhost:3000/dashboard/analytics">Dashboard</a> </li>
+          {/* <li>
+            <Link href="/">Home</Link>
+          </li> */}
+          <li>
+            <CustomLink path="/">Home</CustomLink>
+          </li>
+          <li>
+            <CustomLink path="/dashboard">Dashboard</CustomLink>
+            {/* <Link href="/dashboard">Dashboard</Link> */}
+          </li>
+          <li>
+            <CustomLink path="/dashboard/analytics">Analytics</CustomLink>
+            {/* <Link href="/dashboard/analytics">Analytics</Link> */}
+          </li>
+          <li>
+            <CustomLink path="/dashboard/settings">Settings</CustomLink>
+          </li>
+          <li>
+            <CustomLink path="/dashboard/profileA">Profile-A</CustomLink>
+          </li>
+        
         </ul>
       </nav>
       {children}
       <hr />
-      <footer className=" text-center font-semibold">basic routing 2024 Next js 14 </footer>
+      <footer className=" text-center font-semibold">Basic routing 2024 Next js 14 </footer>
       </body>
     </html>
   );

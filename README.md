@@ -24,13 +24,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 5. [**Pages and Layouts**](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)
 
-    - Pages are Server Components by defaul
+    - Pages are Server Components by default
     - layout never re render . 
     - RootLayout:
      ![GitHub Web](https://nextjs.org/_next/image?url=%2Fdocs%2Flight%2Flayout-special-file.png&w=3840&q=75)
     - Nested Layout:
      ![GitHub Web](https://nextjs.org/_next/image?url=%2Fdocs%2Flight%2Fnested-layout.png&w=3840&q=75)
     
+6. [**Navigate and Linking**]()
 
+    - All hooks are `Client` components
 
+    - Programmatically go to url is possible using **usePathName hook** of next js
+      this is implemented in `CustomLink Component`
 
+    - Programmatically navigate is possible using **useRouter hook** of next js
+      this is implemented in `CustomButton Component`
