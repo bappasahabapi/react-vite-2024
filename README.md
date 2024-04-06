@@ -10,6 +10,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+- Everything inside the app folder is server components.
 
 4. [**Defining Routes**](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
 
@@ -22,6 +23,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
      ![GitHub Web](https://nextjs.org/_next/image?url=%2Fdocs%2Flight%2Fdefining-routes.png&w=3840&q=75)
 
 5. [**Pages and Layouts**](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)
+
+    - Pages are Server Components by defaul
+    - layout never re render . 
+    - RootLayout:
+     ![GitHub Web](https://nextjs.org/_next/image?url=%2Fdocs%2Flight%2Flayout-special-file.png&w=3840&q=75)
+    - Nested Layout:
+     ![GitHub Web](https://nextjs.org/_next/image?url=%2Fdocs%2Flight%2Fnested-layout.png&w=3840&q=75)
+    
 
 
 
