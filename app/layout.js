@@ -37,12 +37,18 @@ export default function RootLayout({ children }) {
           <li>
             <CustomLink path="/dashboard/profileA">Profile-A</CustomLink>
           </li>
+          <li>
+            <CustomLink path="/heavy">Heavy</CustomLink>
+          </li>
+          <li>
+            <CustomLink path="/blogs">BlogList</CustomLink>
+          </li>
         
         </ul>
       </nav>
       {children}
       <hr />
-      <footer className=" text-center font-semibold">Basic routing 2024 Next js 14 </footer>
+      <footer className=" text-center font-semibold mt-96 ">Basic routing 2024 Next js 14 </footer>
       </body>
     </html>
   );

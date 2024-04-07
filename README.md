@@ -40,3 +40,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
     - Programmatically navigate is possible using **useRouter hook** of next js
       this is implemented in `CustomButton Component`
+
+7. [**Loading UI and Streaming**](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)
+
+    -  This part use the concept of React Suspese
+    
+10. [**Dynamic Routes**]()
+
+    - This part is implemented in **BlogList component**
