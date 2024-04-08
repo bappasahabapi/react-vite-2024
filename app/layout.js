@@ -43,7 +43,10 @@ export default function RootLayout({ children }) {
           <li>
             <CustomLink path="/blogs">BlogList</CustomLink>
           </li>
-        
+          <li>
+            <CustomLink path="/games">GameList</CustomLink>
+          </li>
+  
         </ul>
       </nav>
       {children}

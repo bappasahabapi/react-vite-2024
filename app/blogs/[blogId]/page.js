@@ -2,6 +2,7 @@ import blogs from '@/data/blog';
 import React from 'react'
 
 export default function SingleBlog({params}) {
+  console.log("Rendering Single Blog ...")
     const {blogId}=params;
     const blog =blogs.find((blog)=>blog.id === blogId);
     const {title, description}=blog;
