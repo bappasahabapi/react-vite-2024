@@ -12,6 +12,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Everything inside the app folder is server components.
 
+1. [**Project Structure**](https://nextjs.org/docs/getting-started/project-structure)
+
 4. [**Defining Routes**](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
 
     - Next.js uses a **file-system based router** where **folders are used to define routes.**
