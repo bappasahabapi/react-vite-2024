@@ -1,9 +1,13 @@
 import comments from "@/app/database/comments"
+import { redirect } from "next/navigation";
 
 //get single comment by id in dynamic route
 export async function GET(_request,context){
     const {params}=context;
     const commentId =params.id;
+    if(parseInt(commentId) >comments.length){
+      redirect("/api/comments")
+    }
     console.log(commentId) // sting pai '1'.
     const comment =comments.find(c=>c.id==parseInt(commentId));
 
