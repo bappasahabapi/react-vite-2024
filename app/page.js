@@ -9,6 +9,7 @@ export default function Home() {
     </h1>
     <Link className='text-2xl bg-indigo-200' href="/jfldfjl">Click here to go not found page</Link>
     <Link className='text-2xl bg-indigo-200' href="/product/100/review/5">Click here to go http://localhost:3000/product/100/review/5</Link>
+    <Link className='text-2xl bg-indigo-200' href="/contact">Contact-Interationalization</Link>
    </div>
   );
 }

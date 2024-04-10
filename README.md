@@ -28,4 +28,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     - By default,` not-found is a Server Component`. You can mark it as async to fetch and display data:
     - manaually go to the not found page using next js` notFound() function` use in product page.
 
-9. 🛣️ [**Internationalization**]()
+9. 🛣️ [**Internationalization**](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
+
+    - Next.js enables you to configure the routing and rendering of content to support **multiple languages.** Making your site adaptive to different locales includes translated content (localization) and internationalized routes.
