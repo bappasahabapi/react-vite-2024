@@ -8,6 +8,12 @@
 
 - 🌳 [Next js-14 Advanced Routing](https://github.com/bappasahabapi/react-vite-2024/tree/r8/8.0/Nextjs-14/Advanced-routing)
 
+### My Other Next js projects [typescript+redux+rtk+antd]
+
+-  [RMSTU-Frontend-13.4 app-base](https://github.com/bappasahabapi/rmstu-frontend)
+-  [next-js-13.4-pageRoute-app](https://github.com/bappasahabapi/next-js-13.4-pageRoute-app)
+-  [next-js-13.4-pagebase-NewsPortal](https://github.com/bappasahabapi/next-js-13.4-pagebase-NewsPortal)
+-  [next-js13-page-projects](https://github.com/bappasahabapi/next-js13-page-projects)
 
 ##    Basic vite 
 
