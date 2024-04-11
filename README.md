@@ -1,6 +1,12 @@
 ##    Next js 14
 
--  [Nextjs-14/Starter](https://github.com/bappasahabapi/react-vite-2024/tree/starter/Nextjs-14)
+  
+- 🌳 [Next js-14 Starer](https://github.com/bappasahabapi/react-vite-2024/tree/starter/Nextjs-14)
+- 🌳 [Next js-14 Basic Routing](https://github.com/bappasahabapi/react-vite-2024/tree/r7/7.0/Nextjs-14/basic-routing)
+
+  - 🚇 Implemented Project is: [nextjs-14-documentation-app](https://github.com/bappasahabapi/nextjs-14-documentation-app)
+
+- 🌳 [Next js-14 Advanced Routing](https://github.com/bappasahabapi/react-vite-2024/tree/r8/8.0/Nextjs-14/Advanced-routing)
 
 
 ##    Basic vite 
