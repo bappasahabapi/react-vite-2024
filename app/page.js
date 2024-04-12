@@ -3,7 +3,7 @@
 export default function Home() {
   return (
    <div>
-    <h1 className="text-2xl">
+    <h1>
       Photo Gallary
     </h1>
     
