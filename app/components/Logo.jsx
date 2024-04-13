@@ -6,7 +6,7 @@ const Logo = () => {
     <Link href='/'>
       <Image
         className="max-w-[100px] md:max-w-[165px] "
-        src="/assets/logo.png"
+        src="/assets/logo.jpg"
         alt="Photo Gallery"
         height={100}
         width={165}

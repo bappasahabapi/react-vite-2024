@@ -11,6 +11,7 @@ function getLocale(request) {
   let languages = new Negotiator({ headers }).languages();
 
   // match() -> means if locales is in languages return locales otherwise return defaultLocale
+  console.log(languages) // [ 'en-US', 'en', 'bn', 'en-IN' ]
   return match(languages, locales, defaultLocale); //en
 }
 
