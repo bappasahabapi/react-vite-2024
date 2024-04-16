@@ -7,6 +7,7 @@
   - 🚇 Implemented Project is: [nextjs-14-documentation-app](https://github.com/bappasahabapi/nextjs-14-documentation-app)
 
 - 🌳 [Next js-14 Advanced Routing](https://github.com/bappasahabapi/react-vite-2024/tree/r8/8.0/Nextjs-14/Advanced-routing)
+  - 🚇 Implemented Project is: [nextjs-14-Photo Gallary](https://github.com/bappasahabapi/react-vite-2024/tree/r8-PhotoGallary)
 
 ### My Other Next js projects [typescript+redux+rtk+antd]
 
