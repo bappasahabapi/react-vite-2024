@@ -1,5 +1,5 @@
 
-First, run the development server:
+First, run the development server: 👍
 
 ```bash
 npm run dev
