@@ -21,6 +21,9 @@ export default function Header() {
         <Link prefetch={false} className="m-0 hover:bg-blue-700   " href="/rsc">
             RSC
         </Link>
+        <Link prefetch={false} className="m-0 hover:bg-blue-700   " href="/image">
+            Image 
+        </Link>
     </nav>
     
     );
