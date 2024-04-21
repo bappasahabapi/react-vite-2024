@@ -10,4 +10,8 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+##    1. Rendering 
 
+    - Static Site Generation (SSG)
+    - Static Rendering (SR)
+    - Incremental Static Site Regenaration (ISSR)

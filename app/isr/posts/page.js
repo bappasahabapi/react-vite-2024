@@ -3,10 +3,12 @@ import Link from "next/link";
 
 export default async function Posts() {
     const posts = await getPosts();
+    // const posts = await getPosts("revalidated");
 
     return (
         <div>
-            <h1>All posts</h1>
+            <h1 className="text-yellow-400 ">Incremental Static Re generation</h1>
+            <h4>All posts</h4>
             <div className="mt-4">
                 <ul>
                     {posts.map((post) => (
