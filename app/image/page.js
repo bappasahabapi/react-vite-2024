@@ -1,11 +1,11 @@
 import Image from "next/image";
 import bappaImage from "@/public/assets/images/bappa.png"
 import React from "react";
-
+import { roboto } from "../layout";
 const ImageOptimization = () => {
   return (
     <div>
-      <h1> Next js Image Optimization</h1>
+      <h1  className={roboto.className}> Next js Image Optimization</h1>
       <div className="flex gap-4">
         <div className="mt-4 border border-emerald-100">
         <h3>1</h3>
