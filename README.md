@@ -16,3 +16,13 @@
     - make some data in `location-utils.js` file and store this as array of object
     - `const locationData = [ {},{},... ];`
     - hit this url to see the api  `http://localhost:3000/api/location`
+    - hit this url to see the api  `http://localhost:3000/api/location/dhaka`
+    
+**3. Make Parallel Routing slot skeletons**
+
+- Implement Parallel Routing in `[locaiton]` folder
+
+    - @aqi
+    - @weather
+    - @temperature
+    - @wind 
