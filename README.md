@@ -26,3 +26,11 @@
     - @weather
     - @temperature
     - @wind 
+
+**4. Detect Geolocation & Reroute**
+- `LocationDetector.jsx` file
+- `http://localhost:3000/current/?lat={}&lon={}`
+- Here we work in query and search parameters so we use useSearchParams form nextjs.
+- usePathname, useRouter.
+- To get the url search params we pass our `searchParam` to the `URLSearchParams(searchParams)` 
+- so that we get` http://localhost:3000/current?latitude=23.7389396&longitude=90.3929374`
