@@ -78,7 +78,7 @@ const airPollutionApi=
 export const getWeatherData = async (lat, lon) => {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid={process.env.OPEN_WEATHER_MAP_API_KEY}&units=matric`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&units=matric`
     );
 
     const data = await response.json();
@@ -87,6 +87,18 @@ export const getWeatherData = async (lat, lon) => {
     console.log(error);
   }
 };
+// export const getWeatherData = async (lat, lon) => {
+//   try {
+//     const response = await fetch(
+//       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&units=matric`
+//     );
+
+//     const data = await response.json();
+//     return data
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
 export const getTemperatureData = async (lat, lon) => {
   console.log(lat, lon);
