@@ -45,3 +45,8 @@
     - @weather
     - @temperature
     - @wind 
+
+**5.Locatoin Info Switcher Implementation**
+- Implement the Current location ui `LocationInfo.jsx`
+- Implement the switcher ui `LocationSwitcher.jsx`
+    - Handle `client component async call using useEffect()`
