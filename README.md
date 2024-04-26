@@ -34,3 +34,14 @@
 - usePathname, useRouter.
 - To get the url search params we pass our `searchParam` to the `URLSearchParams(searchParams)` 
 - so that we get` http://localhost:3000/current?latitude=23.7389396&longitude=90.3929374`
+
+
+**4.Make slots using APIs**
+
+- We make a `lib folder` and make some function which will return the curent weather data needed fileds
+
+**5.Make Workable the slots with APIs**
+    - @aqi
+    - @weather
+    - @temperature
+    - @wind 

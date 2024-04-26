@@ -1,11 +1,12 @@
 import { locationData } from "@/app/database/locationData";
 // import locarionJsonData from "@/app/database/locationJSONData";
 
-
+// http://localhost:3000/api/location
 function getLocations() {
     return locationData;
-}
+};
 
+// http://localhost:3000/api/location
 function getLocationsByName(locationName) {
     if (!locationName) {
         return null;

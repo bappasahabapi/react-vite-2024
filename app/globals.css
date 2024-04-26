@@ -22,7 +22,7 @@
         @apply relative h-full min-h-[290px] max-w-full rounded-2xl bg-[#293A4E] p-5 text-white;
     }
     .feature-name {
-        @apply text-sm font-medium text-[#7887A2] lg:text-base;
+        @apply text-sm font-medium text-[#3eece9] lg:text-base;
     }
     .feature-main {
         @apply absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center space-y-2;
