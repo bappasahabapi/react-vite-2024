@@ -15,7 +15,7 @@ const LocationInfo = async ({ lat, lon }) => {
                     <LocationSwitcher />
                 </div>
                 <p className="text-lg text-[#4ed437] lg:text-xl">
-                    {locationInfo?.countryName} | {locationInfo?.city}
+                 {locationInfo?.countryName} | 🚩{locationInfo?.city}
                 </p>
                 <div className="flex items-center gap-2 text-xs text-[#c3d6f8] lg:text-sm">
                     <span>{new Date().toLocaleTimeString()}</span>{" "}

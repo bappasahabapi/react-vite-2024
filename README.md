@@ -1,5 +1,13 @@
+## Run The Project 
+- clone the project `npm install`
+- `npm run dev`
 
 
+## Projec Summary.
+
+- Use Server & Client Component
+- Data Fetching on the Server using `fetch`
+- Data Fetching on the Client and Server thrird party libraries & route handlers
 
 **1. Set up Initial Setup**
 
@@ -46,7 +54,16 @@
     - @temperature
     - @wind 
 
-**5.Locatoin Info Switcher Implementation**
+**6.Locatoin Info Switcher Implementation**
 - Implement the Current location ui `LocationInfo.jsx`
 - Implement the switcher ui `LocationSwitcher.jsx`
     - Handle `client component async call using useEffect()`
+
+
+**7.Direct Access Route**
+
+- `http://localhost:3000/dhaka` handle this
+- To fix this 
+    - First check if latitude and longitude are present or not.
+    - If latitude and longitude are not present then check location is present or not.
+    - Use Redirect using Link 

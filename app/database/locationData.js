@@ -9,11 +9,11 @@ export const locationData = [
         latitude: 22.5726723,
         longitude: 88.3638815,
     },
-    // {
-    //     location: "Dhaka",
-    //     latitude: 23.777176,
-    //     longitude: 90.399452,
-    // },
+    {
+        location: "Thakurgaon",
+        latitude: 26.0274,
+        longitude: 88.4646,
+    },
     {
         location: "Singapore",
         latitude: 1.2899175,
