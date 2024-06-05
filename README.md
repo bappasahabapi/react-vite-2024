@@ -2,12 +2,16 @@
 
   
 - 🌳 [Next js-14 Starer](https://github.com/bappasahabapi/react-vite-2024/tree/starter/Nextjs-14)
-- 🌳 [Next js-14 Basic Routing](https://github.com/bappasahabapi/react-vite-2024/tree/r7/7.0/Nextjs-14/basic-routing)
+- 🌳 [Next js-14 Basic Routing-[r7]](https://github.com/bappasahabapi/react-vite-2024/tree/r7/7.0/Nextjs-14/basic-routing)
 
   - 🚇 Implemented Project is: [nextjs-14-documentation-app](https://github.com/bappasahabapi/nextjs-14-documentation-app)
 
-- 🌳 [Next js-14 Advanced Routing](https://github.com/bappasahabapi/react-vite-2024/tree/r8/8.0/Nextjs-14/Advanced-routing)
+- 🌳 [Next js-14 Advanced Routing-[r8]](https://github.com/bappasahabapi/react-vite-2024/tree/r8/8.0/Nextjs-14/Advanced-routing)
   - 🚇 Implemented Project is: [nextjs-14-Photo Gallary](https://github.com/bappasahabapi/react-vite-2024/tree/r8-PhotoGallary)
+- 🌳 [Data Fetching & Caching & Revalidation-[r9]]()
+    - 🚇 Implemented Project is: [[nextjs-14-Eco System Weather Dashboard]]()
+- 🌳 [Rendering & Optimizing-[r10]]()
+    - 🚇 Implemented Project is: [nextjs-14-Event-Project]()
 
 ### My Other Next js projects [typescript+redux+rtk+antd]
 
