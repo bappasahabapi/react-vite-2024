@@ -1,3 +1,20 @@
+
+```javascript
+
+```
+```javascript
+/* eslint-disable react/prop-types */
+export default function TabButton({ children , onSelect}) {
+
+  return (
+    <li>
+      <button onClick={onSelect}>{children}</button>{" "}
+    </li>
+  );
+}
+
+```
+```javascript
 import Header from "./components/Header";
 import { CORE_CONCEPTS } from "../data";
 import CoreConcept from "./components/CoreConcept";
@@ -49,3 +66,11 @@ function App() {
 }
 
 export default App;
+
+```
+```javascript
+
+```
+```javascript
+
+```

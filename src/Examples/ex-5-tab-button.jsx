@@ -1,20 +1,33 @@
+/* eslint-disable react/prop-types */
+export default function TabButton({ children, }) {
+
+    function handleClick(){
+        console.table('hello');
+    }
+
+
+  return (
+    <li>
+      <button
+      onClick={handleClick}
+      >{children}</button>{" "}
+    </li>
+  );
+}
+
+// export default function TabButton({label}) {
+//           return (
+//             <li><button>{label}</button> </li>
+//           )
+//         }
+
+
 import Header from "./components/Header";
 import { CORE_CONCEPTS } from "../data";
 import CoreConcept from "./components/CoreConcept";
 import TabButton from "./components/TabButton";
-import { useState } from "react";
 
 function App() {
-
-  const [seletedTopic, setSelectedTopic]=useState('Please click a tab button');
-
-
-  function handleSelect(selectedButton) {
-    //selectedButton=>'componetBtn',jsxBtn  // string takes
-    console.log(selectedButton,"button --selected");
-    setSelectedTopic(`${selectedButton} content is Showing. This done by useState() hook.`);
-  }
-
   return (
     <div>
       <Header />
@@ -35,13 +48,12 @@ function App() {
         <section id="examples">
           <h2>Tab Buttons</h2>
           <menu>
-            <TabButton onSelect={()=>handleSelect('component')}>Component-Btn</TabButton>
-            <TabButton onSelect={()=>handleSelect('jsx')}>JSX-Btn</TabButton>
-            <TabButton onSelect={()=>handleSelect('props')}>Props-Btn</TabButton>
-            <TabButton onSelect={handleSelect }>State-Btn</TabButton>
+            <TabButton >Component-Btn</TabButton>
+            <TabButton>JSX-Btn</TabButton>
+            <TabButton>Props-Btn</TabButton>
+            <TabButton>State-Btn</TabButton>
+
           </menu>
-          <b>useState hook</b> for Dynamic Content showing. <br /> <br />
-          <span style={{ }}> {seletedTopic}</span>
         </section>
       </main>
     </div>

@@ -1,11 +1,13 @@
 # React Component jsx props state:
 - Run the project :`npm install` and then  `npm run dev`
+- 
+![output](./section-3.png)
+
 
 
 -    From pdf: page 40 starts: 
 
 - notes:
-
 
 ## 8. React Props
 
