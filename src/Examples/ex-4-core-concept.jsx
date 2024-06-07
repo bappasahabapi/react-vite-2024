@@ -12,12 +12,15 @@ function App() {
           <ul>
             <CoreConcept {...CORE_CONCEPTS[0]} />
             <CoreConcept {...CORE_CONCEPTS[1]} />
-            <CoreConcept {...CORE_CONCEPTS[2]} />
             <CoreConcept
               title={CORE_CONCEPTS[2].title}
               description={CORE_CONCEPTS[2].description}
               image={CORE_CONCEPTS[2].image}
             />
+            <CoreConcept
+              title={CORE_CONCEPTS[3].title}
+              description={CORE_CONCEPTS[3].description}
+              image={CORE_CONCEPTS[3].image}
             />
           </ul>
         </section>

@@ -33,7 +33,7 @@ header img {
 header h1 {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -43,7 +43,7 @@ header h1 {
 header p {
   margin: 0;
   font-size: 1.25rem;
-  color: #8964b0;
+  color: #e1d8ea;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -51,6 +51,12 @@ main {
   width: 90%;
   max-width: 50rem;
   margin: auto;
+}
+
+span {
+  color: #eeff03;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 #core-concepts {
@@ -64,7 +70,7 @@ main h2 {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   margin: 0 0 1.5rem 0;
-  color: #a18aba;
+  color: #6edfed;
 }
 
 #core-concepts ul {
@@ -86,6 +92,7 @@ main h2 {
   height: 4rem;
   width: 6rem;
   object-fit: cover;
+  border: 1px solid rgb(12, 104, 76);
 }
 
 #core-concepts li h3 {
