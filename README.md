@@ -30,13 +30,20 @@
 - ➡️ Handling User Events
 - ➡️ Building Interactive UIs with States
 
-
 - **T-02**
     - **spliting** the code base
     - **Forwaring Props** concept (...props)
     - Multiple Component Slots
     - Element Identifier as props
     - Defalut Props value
+    - **Tic Tac toe** 
+        - Multiple State Variable 
+        - Lifting State Up
+        - Derived State
+        - Nested Lists
+        - Array and Object State
+        - Component Functions vs Normal Functions
+
 
 
 ## 8. React Props
