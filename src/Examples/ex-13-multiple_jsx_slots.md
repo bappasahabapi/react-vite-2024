@@ -1,3 +1,15 @@
+```javascript
+export default function Tabs({ children, buttons }) {
+  return (
+    <>
+      <menu>{buttons}</menu>
+      {children}
+    </>
+  );
+}
+
+```
+```javascript
 import { useState } from "react";
 import TabButton from "./TabButton";
 import { EXAMPLES } from "../../data";
@@ -76,3 +88,11 @@ export default function Examples() {
     </Section>
   );
 }
+
+```
+```javascript
+
+```
+```javascript
+
+```
