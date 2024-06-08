@@ -1,3 +1,17 @@
+```javascript
+export default function Tabs({ children, buttons,buttonContainer }) {
+  const ButtonContainer =buttonContainer;
+  return (
+    <>
+      <ButtonContainer>{buttons}</ButtonContainer>
+      {/* //this part is for content  */}
+      {children}
+    </>
+  );
+}
+```
+
+```javascript
 import { useState } from "react";
 import TabButton from "./TabButton";
 import { EXAMPLES } from "../../data";
@@ -62,7 +76,7 @@ export default function Examples() {
     <Section title="Example Tab Buttons sections" id="examples" className="">
       <b>useState hook</b> for Dynamic Content showing. <br />
       <Tabs buttons={tabButtons}
-      // buttonContainer='menu'
+      buttonContainer='menu'
       >
         {seletedTopic && (
           <>
@@ -78,3 +92,6 @@ export default function Examples() {
     </Section>
   );
 }
+
+```
+
