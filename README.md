@@ -1,24 +1,43 @@
 # React Component jsx props state:
 - Run the project :`npm install` and then  `npm run dev`
 
-![output](./section-3.png)
 
--    From pdf: page 40 starts: 
 
 - **Implemented:**
-`- Topic`
+
+-    From pdf: page 40 starts: 
+### Topic:1
+🔥 [Project-link](https://github.com/bappasahabapi/react-vite-2024/tree/section-3/component_jsx_props_state)
     - ➡️ Building User Interface with Components 
     - ➡️ Using Sharing Outputing Data
     - ➡️ Handling User Events
     - ➡️ Building Interactive UIs with States
-    -
+![output](./section-3.png)
 
-- Css styling & Dynamic Styling for tab button
-- Rendering Content dynamically for each tab button.
-- isActive functionality for which tab is currently active
-- implement events for tab buttons 
-- dynamically text and image loding for each refresh
-- useState hook is implemented for showing the content in the UI.
+- **T-01**
+    - Css styling & Dynamic Styling for tab button
+    - Rendering Content dynamically for each tab button.
+    - isActive functionality for which tab is currently active
+    - implement events for tab buttons 
+    - dynamically text and image loding for each refresh
+    - useState hook is implemented for showing the content in the UI.
+---
+
+### Topic:2
+
+- ➡️ Building User Interface with Components 
+- ➡️ Using Sharing Outputing Data
+- ➡️ Handling User Events
+- ➡️ Building Interactive UIs with States
+
+
+- **T-02**
+    - **spliting** the code base
+    - **Forwaring Props** concept (...props)
+    - Multiple Component Slots
+    - Element Identifier as props
+    - Defalut Props value
+
 
 ## 8. React Props
 
