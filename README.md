@@ -1,11 +1,17 @@
 # React Component jsx props state:
 - Run the project :`npm install` and then  `npm run dev`
-- 
+
 ![output](./section-3.png)
 
 -    From pdf: page 40 starts: 
 
 - **Implemented:**
+`- Topic`
+    - ➡️ Building User Interface with Components 
+    - ➡️ Using Sharing Outputing Data
+    - ➡️ Handling User Events
+    - ➡️ Building Interactive UIs with States
+    -
 
 - Css styling & Dynamic Styling for tab button
 - Rendering Content dynamically for each tab button.
