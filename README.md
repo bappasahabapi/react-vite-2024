@@ -3,11 +3,16 @@
 - 
 ![output](./section-3.png)
 
-
-
 -    From pdf: page 40 starts: 
 
-- notes:
+- **Implemented:**
+
+- Css styling & Dynamic Styling for tab button
+- Rendering Content dynamically for each tab button.
+- isActive functionality for which tab is currently active
+- implement events for tab buttons 
+- dynamically text and image loding for each refresh
+- useState hook is implemented for showing the content in the UI.
 
 ## 8. React Props
 
