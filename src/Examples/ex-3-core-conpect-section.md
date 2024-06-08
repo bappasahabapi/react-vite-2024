@@ -1,3 +1,6 @@
+```javascript
+
+
 import CoreConcept from '../components/CoreConcept';
 import componentImg from './assets/components.png'
 import Header from "./components/Header";
@@ -24,3 +27,4 @@ function App() {
 }
 
 export default App;
+```

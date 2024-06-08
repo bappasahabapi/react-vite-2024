@@ -1,3 +1,5 @@
+```javascript
+
 import Header from "./components/Header";
 import { CORE_CONCEPTS } from "../data";
 import CoreConcept from "./components/CoreConcept";
@@ -30,3 +32,4 @@ function App() {
 }
 
 export default App;
+```

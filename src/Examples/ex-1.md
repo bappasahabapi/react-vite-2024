@@ -1,3 +1,5 @@
+```javascript
+
 function Header(){
     return(
       <header>
@@ -24,4 +26,4 @@ function Header(){
   }
   
   export default App
-  
+  ```
