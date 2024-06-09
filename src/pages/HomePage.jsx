@@ -5,6 +5,7 @@ import Examples from "../components/Examples";
 function HomePage() {
   return (
     <>
+    {/* <a style={{color:'white',fontSize:'50px'}} href="/calculator">calculator</a> */}
       <Header />
       <main>
         <Examples />
