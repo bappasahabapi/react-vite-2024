@@ -1,4 +1,7 @@
 # React Component jsx props state:
+
+branch: [component-jsx-props-useState()](https://github.com/bappasahabapi/react-vite-2024/tree/section-3/component_jsx_props_state)
+
 - Run the project :`npm install` and then  `npm run dev`
 
 ![output](./section-3.png)
