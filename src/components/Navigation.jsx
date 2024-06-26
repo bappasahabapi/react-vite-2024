@@ -12,6 +12,12 @@ export default function Navigation() {
           calculator
         </a>
       </div>
+      <div>
+        {" "}
+        <a style={{ color: "white" }} href="/expenses">
+          Expenses
+        </a>
+      </div>
     </div>
   );
 }
