@@ -1,68 +1,175 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: 'Lato', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#d0d6d9, #b1b4ba);
+  color: #d9e2f1;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header {
+  margin: 2rem 0;
+  text-align: center;
 }
 
-button {
+header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #758a8a;
+  filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5));
+}
+
+header h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 1rem 0;
+  letter-spacing: 0.2rem;
+  color: #2f4444;
+}
+header h4 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  letter-spacing: 0.2rem;
+  color: #2f4444;
+}
+
+form {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, #253c3c, #1d4949);
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.control,
+fieldset {
+  margin-bottom: 1rem;
 }
+
+.control.no-margin {
+  margin-bottom: 0;
+}
+
+.control label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  color: #9bafaf;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.control input {
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #758a8a;
+  background-color: #869999;
+  color: #142020;
+}
+
+.control select {
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #758a8a;
+  background-color: #869999;
+  color: #142020;
+}
+
+.control:has(input[type='checkbox']) {
+  display: flex;
+  align-items: center;
+}
+
+.control:has(input[type='checkbox']) label {
+  margin: 0;
+}
+
+.control input[type='checkbox'] {
+  display: inline-block;
+  width: auto;
+  max-width: none;
+  margin-right: 0.5rem;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  color: #d9e2f1;
+}
+
+.control-error {
+  color: #ffca99;
+  font-size: 0.8rem;
+  height: 2rem;
+  padding: 0.5rem 0;
+}
+
+.control-error p {
+  margin: 0;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #147b73;
+  color: #d9e2f1;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #319890;
+}
+
+.button-flat {
+  background-color: transparent;
+  color: #9cbaba;
+}
+
+.button-flat:hover,
+.button-flat:focus {
+  background-color: transparent;
+  color: #869999;
+}
+
+.example {
+  text-align: center;
+  color: #33c4f0;
+  font-weight: 700;
+}
+
