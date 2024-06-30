@@ -40,7 +40,7 @@ export const AVAILABLE_PLACES = [
   },
   {
     id: 'p3',
-    title: 'Himalayan Peaks',
+    title: 'Thakurgaon River',
     image: {
       src: majesticMountains,
       alt: 'The sun setting behind snow-capped peaks of majestic mountains.',
