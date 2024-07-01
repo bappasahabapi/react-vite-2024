@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import Places from "./components/Places.jsx";
 import { AVAILABLE_PLACES } from "./data.js";
@@ -13,7 +13,7 @@ function App() {
   const [pickedPlaces, setPickedPlaces] = useState([]);
   const [availablePlaces, setAvailablePlaces] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [alreadySelected, setAlreadySelected] = useState(false)
+  const [alreadySelected, setAlreadySelected] = useState(false);
 
   useEffect(() => {
     const sortedIds = JSON.parse(localStorage.getItem("selectedPlaces")) || [];
@@ -21,7 +21,7 @@ function App() {
       AVAILABLE_PLACES.find((place) => place.id === id)
     );
 
-    setPickedPlaces(sortedPlaces)
+    setPickedPlaces(sortedPlaces);
   }, []);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function App() {
 
   function handleStopRemovePlace() {
     // modal.current.close();
-    setIsModalOpen(false);
+    // setIsModalOpen(false);
   }
 
   function handleSelectPlace(id) {
@@ -65,27 +65,31 @@ function App() {
     }
   }
 
-  function handleRemovePlace() {
+  //stop timer
+  const handleRemovePlace = useCallback(  function handleRemovePlace() {
     setPickedPlaces((prevPickedPlaces) =>
       prevPickedPlaces.filter((place) => place.id !== selectedPlace.current)
     );
     // modal.current.close();
-    setIsModalOpen(false)
+    setIsModalOpen(false);
 
     const sortedIds = JSON.parse(localStorage.getItem("selectedPlaces")) || [];
     localStorage.setItem(
       "selectedPlaces",
       JSON.stringify(sortedIds.filter((id) => id !== selectedPlace.current))
     );
-  }
+  },[])
+
 
   return (
     <>
       <Modal open={isModalOpen} onClose={handleRemovePlace}>
-        <DeleteConfirmation
-          onCancel={handleStopRemovePlace}
-          onConfirm={handleRemovePlace}
-        />
+        {/* {isModalOpen && ( */}
+          <DeleteConfirmation
+            onCancel={handleStopRemovePlace}
+            onConfirm={handleRemovePlace}
+          />
+        {/* )} */}
       </Modal>
 
       <header>
@@ -96,10 +100,12 @@ function App() {
           you have visited.
         </p>
       </header>
-      {alreadySelected && <div>
-        <h1>Already Selected </h1>
-      </div> }
-      
+      {alreadySelected && (
+        <div>
+          <h1>Already Selected </h1>
+        </div>
+      )}
+
       <main>
         <Places
           title="I'd like to visit ..."
