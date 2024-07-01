@@ -1,4 +1,5 @@
-##    Next js 14
+##   🟩 Next js 14
+---
 
   
 - 🌳 [Next js-14 Starer](https://github.com/bappasahabapi/react-vite-2024/tree/starter/Nextjs-14)
@@ -13,25 +14,27 @@
 - 🌳 [Rendering & Optimizing-[r10]]()
     - 🚇 Implemented Project is: [nextjs-14-Event-Project]()
 
-### My Other Next js projects [typescript+redux+rtk+antd]
+### 🟩 My Other Next js projects [typescript+redux+rtk+antd]
+---
 
 -  [RMSTU-Frontend-13.4 app-base](https://github.com/bappasahabapi/rmstu-frontend)
 -  [next-js-13.4-pageRoute-app](https://github.com/bappasahabapi/next-js-13.4-pageRoute-app)
 -  [next-js-13.4-pagebase-NewsPortal](https://github.com/bappasahabapi/next-js-13.4-pagebase-NewsPortal)
 -  [next-js13-page-projects](https://github.com/bappasahabapi/next-js13-page-projects)
 
-##    Basic vite 
+## 🟩 React + Vite 2024 
+---
 
-`npm run dev`
+📚   [Notes](https://snapdragon-mambo-8cb.notion.site/React-Note-2024-937311c869de4060b21fc37dd2120e33)
 
--  [Notes](https://snapdragon-mambo-8cb.notion.site/React-Note-2024-937311c869de4060b21fc37dd2120e33)
-- 
-- 
-## React + Vite 2024 
-####    Branch:
+**🌳 Branch:**
 - 💥 section-3:[component-jsx-props-useState()](https://github.com/bappasahabapi/react-vite-2024/tree/section-3/component_jsx_props_state)
 
 - 💥 section-4:[Lifting State Up ](https://github.com/bappasahabapi/react-vite-2024/tree/section-4/lifting_state)
+- 💥 section-11: [UseEffect( ) Hook](https://github.com/bappasahabapi/react-vite-2024/tree/section-11-useEffectHook)
+
+
+
 - 💥 section-17:[User Input Form ](https://github.com/bappasahabapi/react-vite-2024/tree/section-17/working-user-form-input-validation)
 
 <br>
@@ -66,7 +69,8 @@
 </details>
 
 
-##  Main Concept
+##  🟩 Main Concept
+---
 [Official Note](https://bappa-saha.web.app/)
 
 - 🔥🔥🔥[stater pack ](https://github.com/bappasahabapi/react-core-concept/tree/starter)
