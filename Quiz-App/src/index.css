@@ -48,7 +48,7 @@ header h1 {
   letter-spacing: 0.6rem;
   margin: 0;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #e781fb 40%, #8e76fa 60%);
+  background: linear-gradient(90deg, #bbeffd 40%, #b0a3ec 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -130,9 +130,9 @@ header h1 {
 #question h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: bolder;
   margin: 0.5rem 0 2.5rem 0;
-  color: #c1b2dd;
+  color: #f5f3f8;
 }
 
 #answers {
@@ -143,6 +143,7 @@ header h1 {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  /* text-size-adjust: ; */
 }
 
 .answer {
