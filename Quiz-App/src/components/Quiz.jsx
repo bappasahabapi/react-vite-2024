@@ -7,7 +7,6 @@ export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState([]);
 
   const activeQuestionIndex = userAnswers.length; // everytime it increased by 1 automatically
-
   const quizIsComplete = activeQuestionIndex === QUESTIONS.length;
 
   const handleSelectAnswer = (selectedAnswer) => {
