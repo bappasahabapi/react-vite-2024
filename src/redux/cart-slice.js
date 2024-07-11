@@ -11,7 +11,7 @@ const carSlice = createSlice({
     addItemToCart(state, action) {
       const newItem = action.payload; // payload is {}
       const existingItem = state.item.find((item) => item.id === newItem.id);
-
+      state.totalQuantity++;
       //add item to cart for first time using
       if (!existingItem) {
         state.item.push({
@@ -31,6 +31,7 @@ const carSlice = createSlice({
     removeItemFromCart(state, action) {
       const id = action.payload;
       const existingItem = state.item.find((item) => item.id === id);
+      state.totalQuantity--;
       if (existingItem.quantity === 1) {
         state.item = state.item.filter((item) => item.id !== id);
       } else {

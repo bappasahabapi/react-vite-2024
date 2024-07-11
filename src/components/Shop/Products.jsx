@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import ProductItem from "./ProductItem";
 import classes from "./Products.module.css";
 
@@ -29,6 +30,7 @@ const Products = (props) => {
         {DUMMY_PRODUCT.map((product) => (
           <ProductItem
             key={product.id}
+            id={product.id}
             title={product.title}
             price={product.price}
             description={product.description}
