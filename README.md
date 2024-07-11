@@ -1,6 +1,12 @@
 ##   🟩 Redux
+-  `npm install react-redux`    
+- `npm install @reduxjs/toolkit `
 
+**🌳 Branch:**
+- 💥 section-3:[component-jsx-props-useState()](https://github.com/bappasahabapi/react-vite-2024/tree/section-3/component_jsx_props_state)
 
+- 💥 section-4:[Lifting State Up ](https://github.com/bappasahabapi/react-vite-2024/tree/section-4/lifting_state)
+- 💥 section-11: [UseEffect( ) Hook](https://github.com/bappasahabapi/react-vite-2024/tree/section-11-useEffectHook)
 
 
 
