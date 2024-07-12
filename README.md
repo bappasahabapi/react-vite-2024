@@ -2,6 +2,13 @@
 -  `npm install react-redux`    
 - `npm install @reduxjs/toolkit `
 
+
+<!-- ![Alt text](./redux.png) -->
+<img src="./redux.png" alt="Alt text" width="500" height="300">
+
+
+
+
 **🌳 Branch:**
 - 💥 section-3:[component-jsx-props-useState()](https://github.com/bappasahabapi/react-vite-2024/tree/section-3/component_jsx_props_state)
 
