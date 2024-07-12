@@ -1,6 +1,25 @@
 ##   🟩 Redux
 -  `npm install react-redux`    
 - `npm install @reduxjs/toolkit `
+- `npm install json-server ` [json-server](https://www.npmjs.com/package/json-server)
+
+Configuration Json server: add this line to package.json
+```json
+{
+,
+  "scripts": {
+    "dev": "vite",
+    "server":"json-server --watch server/db.json --port 8000"
+  },
+
+  }
+
+```
+
+
+###    Run the project:
+-    npm run dev
+-    npm run server
 
 
 <!-- ![Alt text](./redux.png) -->
