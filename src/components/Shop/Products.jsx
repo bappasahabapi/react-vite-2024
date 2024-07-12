@@ -3,22 +3,28 @@ import ProductItem from "./ProductItem";
 import classes from "./Products.module.css";
 
 const DUMMY_PRODUCT = [
-  // itemId: newItem.id,
+  // id: newItem.id,
   // price: newItem.price,
   // quantity: 1,
   // totalPrice: newItem.totalPrice,
   // name: newItem.title,
   {
     id: "1",
-    title: "Bappa first book",
+    title: "1st Book",
     price: 10,
     description: "This is a first product - of price 10 Tk!",
   },
   {
     id: "2",
-    title: "Bappa second book",
+    title: "2nd book",
     price: 20,
     description: "This is a second product - of price 20 Tk",
+  },
+  {
+    id: "3",
+    title: "3rd book",
+    price: 20,
+    description: "This is a third product - of price 30 Tk",
   },
 ];
 

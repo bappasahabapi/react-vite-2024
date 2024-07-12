@@ -15,16 +15,16 @@ const carSlice = createSlice({
       //add item to cart for first time using
       if (!existingItem) {
         state.item.push({
-          itemId: newItem.id,
+          id: newItem.id,
           price: newItem.price,
           quantity: 1,
-          totalPrice: newItem.totalPrice,
+          totalPrice: newItem.price,
           name: newItem.title,
         });
       }
       //if the item exist
       else {
-        existingItem.quantityy++;
+        existingItem.quantity++;
         existingItem.totalPrice = existingItem.totalPrice + newItem.price;
       }
     },

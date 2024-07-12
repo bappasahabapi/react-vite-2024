@@ -1,7 +1,31 @@
+/* eslint-disable react/prop-types */
+import { useDispatch } from 'react-redux';
 import classes from './CartItem.module.css';
+import { addItemToCart, removeItemFromCart } from '../../redux/cart-slice';
 
 const CartItem = (props) => {
-  const { title, quantity, total, price } = props.item;
+  const { title, quantity, total, price ,id} = props.item;
+  // console.log(quantity)
+
+  const dispatch =useDispatch();
+  const removeCartHandler =()=>{
+    dispatch(removeItemFromCart(id))
+  };
+  const addCartHandler =()=>{
+    // dispatch(addItemToCart({
+    //   title,
+    //   price,
+    //   id
+    // }))
+    const items ={
+      title,
+      price,
+      id
+    }
+    dispatch(addItemToCart(items))
+
+    
+  };
 
   return (
     <li className={classes.item}>
@@ -17,8 +41,8 @@ const CartItem = (props) => {
           x <span>{quantity}</span>
         </div>
         <div className={classes.actions}>
-          <button>-</button>
-          <button>+</button>
+          <button onClick={removeCartHandler}>-</button>
+          <button onClick={addCartHandler}>+</button>
         </div>
       </div>
     </li>
