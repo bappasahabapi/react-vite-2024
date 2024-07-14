@@ -29,9 +29,13 @@ Configuration Json server: add this line to package.json
 -  Server is only for rtk implementation
         -    `npm run server`
 
-
+## [01-Redux Cart Final]()
 <!-- ![Alt text](./redux.png) -->
 <img src="./redux.png" alt="Alt text" width="500" height="300">
+
+
+## [02-Vite-Redux]()
+<img src="./cart.png" alt="Alt text" width="500" height="300">
 
 
 
