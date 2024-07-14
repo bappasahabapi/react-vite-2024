@@ -3,7 +3,8 @@ import { CartIcon } from "./icons";
 
 const Navbar = () => {
   // console.log(useSelector((store) => {console.log(store)})); // object
-  const amount =useSelector((store)=>store.cart.amount)
+  const amount =useSelector((store)=>store.cart.amount);
+
 
 
   return (
