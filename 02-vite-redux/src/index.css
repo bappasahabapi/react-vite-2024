@@ -14,6 +14,7 @@ Variables
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
+  --clr-yellow-light: hsl(56, 60%, 67%);
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.25rem;
@@ -156,9 +157,10 @@ nav svg {
   justify-content: center;
 }
 .total-amount {
-  color: var(--clr-white);
+  /* color: var(--clr-yellow); */
   margin-bottom: 0;
   font-size: 1.25rem;
+  color:black;
 }
 /*
 =============== 
@@ -205,7 +207,7 @@ Cart
 }
 .clear-btn:hover {
   background: var(--clr-red-light);
-  color: var(--clr-red-dark);
+  color: var(--clr-white);
   border-color: var(--clr-red-light);
 }
 .confirm-btn {
