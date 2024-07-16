@@ -40,10 +40,6 @@ export const getCartItems = createAsyncThunk("cart/getCartItems", async(name,thu
 
 
 
-
-
-
-
 const cartSlice = createSlice({
   name: "cart",
   initialState,
