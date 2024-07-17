@@ -1,10 +1,46 @@
+## 🍀 Redux TypeScript Projects:
+ 
+
+[Starter: react+typeScript+redux+rtk+tailwind]()
+
+- 🔥  
+
+##    Run the project:
+-    `npm run dev`
+
+-  Server is only for rtk implementation
+   -    `npm run server`
+
+### [00-Redux Cart Final](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/00-ReduxCart)
+### [01-Redux Cart Final](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/01-ReduxCartFinal)
+-    `cd 00-ReduxCart`
+- `npm install`
+- `npm run dev`
+- `npm run server`
+<!-- ![Alt text](./redux.png) -->
+<img src="./redux.png" alt="Alt text" width="500" height="300">
+
+
+## [02-Vite-Redux](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/02-vite-redux)
+- `cd 02-vite-redux`
+- `npm install`
+- `npm run dev`
+
+<img src="./cart.png" alt="Alt text" width="500" height="300">
+
+
+
+
+
+
+
 - `uiSlice` are need for locally updated. [here we use redux]
 when working with `database` thats time we need RTK. 
 
 - if we use pure redux the immer feature not working (immutable part) [copy state need (...)]
 - but if we use rtk with redux the immer auto work (immutable part) [direct mution does. no need to copy state]
 
-##   🟩 Redux
+##   🟩 Redux JavaScript
 -  `npm install react-redux`    
 - `npm install @reduxjs/toolkit `
 - `npm install json-server ` [json-server](https://www.npmjs.com/package/json-server)
@@ -22,29 +58,6 @@ Configuration Json server: add this line to package.json
 
 ```
 
-
-###    Run the project:
--    `npm run dev`
-
--  Server is only for rtk implementation
-        -    `npm run server`
-
-## [00-Redux Cart Final](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/00-ReduxCart)
-## [01-Redux Cart Final](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/01-ReduxCartFinal)
--    `cd 00-ReduxCart`
-- `npm install`
-- `npm run dev`
-- `npm run server`
-<!-- ![Alt text](./redux.png) -->
-<img src="./redux.png" alt="Alt text" width="500" height="300">
-
-
-## [02-Vite-Redux](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/02-vite-redux)
-- `cd 02-vite-redux`
-- `npm install`
-- `npm run dev`
-
-<img src="./cart.png" alt="Alt text" width="500" height="300">
 
 
 
