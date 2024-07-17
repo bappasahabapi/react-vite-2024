@@ -1,9 +1,10 @@
 ## 🍀 Redux TypeScript Projects:
  
 
-[Starter: react+typeScript+redux+rtk+tailwind]()
+- 🔥 <b> [Starter:021 react+typeScript+redux+rtk+tailwind](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/021-redux-typeScript-starter) </b>
+- 🔥 <b> [Tech-Net:021-4: local statemanagement ]() </b>
 
-- 🔥  
+ 
 
 ##    Run the project:
 -    `npm run dev`
