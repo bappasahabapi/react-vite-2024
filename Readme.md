@@ -29,7 +29,8 @@ Configuration Json server: add this line to package.json
 -  Server is only for rtk implementation
         -    `npm run server`
 
-## [01-Redux Cart Final]()
+## [00-Redux Cart Final](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/00-ReduxCart)
+## [01-Redux Cart Final](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/01-ReduxCartFinal)
 -    `cd 00-ReduxCart`
 - `npm install`
 - `npm run dev`
@@ -38,7 +39,7 @@ Configuration Json server: add this line to package.json
 <img src="./redux.png" alt="Alt text" width="500" height="300">
 
 
-## [02-Vite-Redux]()
+## [02-Vite-Redux](https://github.com/bappasahabapi/react-vite-2024/tree/section-20-redux/02-vite-redux)
 - `cd 02-vite-redux`
 - `npm install`
 - `npm run dev`
