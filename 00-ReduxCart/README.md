@@ -30,11 +30,19 @@ Configuration Json server: add this line to package.json
         -    `npm run server`
 
 ## [01-Redux Cart Final]()
+-    `cd 00-ReduxCart`
+- `npm install`
+- `npm run dev`
+- `npm run server`
 <!-- ![Alt text](./redux.png) -->
 <img src="./redux.png" alt="Alt text" width="500" height="300">
 
 
 ## [02-Vite-Redux]()
+- `cd 02-vite-redux`
+- `npm install`
+- `npm run dev`
+
 <img src="./cart.png" alt="Alt text" width="500" height="300">
 
 
