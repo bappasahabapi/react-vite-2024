@@ -99,3 +99,43 @@
 - 06 🔥 [React useState hook](https://github.com/bappasahabapi/react-core-concept/tree/2.0-react-useState-hook)
 
 </details>
+
+
+
+###   🟩 All BrachList:
+`git checkout branchname`
+ex: git checkout r18/task
+-  🔥 **main**
+    -  r18/1.8-react-props
+    -  r18/task
+    -  r2/2.10-tasker-functional
+    -  r2/task-book-search
+    -  r3/3.12-useReducer
+    -  r3/3.13-update-code-with-useReducer
+    -  r3/3.20-useReducer-context-api
+    -  r3/3.21-cineplex-useState()
+    -  r3/3.21-contex-useReducer-refactor
+    -  r3/3.21-project-cinerental
+    -  r4/4.30-weather-dashboard
+    -  r5/5.18-facehook-axios-jwt
+    -  r5/5.19-profilePage
+    -  r5/5.19-profilePage-reducers
+-  🔥 **starter/Nextjs-14** 
+    -  r7-document-app
+    -  r7/7.0/Nextjs-14/basic-routing
+    -  r8-PhotoGallary
+    -  r8/8.0/Nextjs-14/Advanced-routing
+    -  r8/Nextjs-14/data-fetching-updated
+    -  r9/Nextjs-14/data-feching-patterns
+    -  r9/Nextjs-14/data-fetching
+    -  r9/Nextjs-14/data-fetching-test
+    -  r9/eco-system-wather-dashboard
+    -  r10/Nextjs-14/Rendering-Optimizing
+    -  r10/Nextjs-14/event-project
+
+-  `section-3/component_jsx_props_state`
+-  `section-4/lifting_state`
+-  `section-11-useEffectHook`
+-  `section-17/working-user-form-input-validation`
+-  `section-20-redux`
+                                
