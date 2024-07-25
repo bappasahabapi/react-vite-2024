@@ -1,0 +1,15 @@
+.notes h2 {
+    color: white;
+    margin: 2rem auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .notes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

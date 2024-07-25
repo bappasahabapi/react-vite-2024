@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import classes from './Card.module.css';
 
 const Card = (props) => {

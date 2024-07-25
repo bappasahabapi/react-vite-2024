@@ -1,0 +1,27 @@
+.item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.item header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.fav {
+  border-radius: 30px;
+  padding: 0.15rem 1.5rem;
+  /* background-color: rgba(249, 164, 234, 0.878); */
+  color: black;
+  font-size: 1.5rem;
+}
+
+.item p {
+  color: #3a3a3a;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
