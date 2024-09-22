@@ -28,6 +28,10 @@ export default function RootLayout({ children }) {
             {/* <Link href="/dashboard">Dashboard</Link> */}
           </li>
           <li>
+            <CustomLink path="/settings">AdminDashboard-Settings </CustomLink>
+            {/* <Link href="/dashboard">Dashboard</Link> */}
+          </li>
+          <li>
             <CustomLink  path="/dashboard/analytics">Analytics</CustomLink>
             {/* <Link href="/dashboard/analytics">Analytics</Link> */}
           </li>

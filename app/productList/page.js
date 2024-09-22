@@ -36,7 +36,6 @@ export default function ProductList() {
         </Suspense>
       <br />
       <br />
-      <Suspense>
          <ul>
         {products.map((product) => (
           <li key={product.id}>
@@ -44,7 +43,7 @@ export default function ProductList() {
           </li>
         ))}
       </ul>
-      </Suspense>
+
      
      
     </div>
