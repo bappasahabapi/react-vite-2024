@@ -6,6 +6,6 @@ export default function CustomLink({path,children}) {
     const pathName =usePathname()
     const active=pathName===path;
   return (
-    <Link className={active ? "text-blue-700 && font-mono" :" "} href={path}>{children}</Link>
+    <Link className={active ? "text-cyan-300  && font-mono" :" "} href={path}>{children}</Link>
   )
 }
