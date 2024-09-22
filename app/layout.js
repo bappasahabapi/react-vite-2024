@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             {/* <Link href="/dashboard">Dashboard</Link> */}
           </li>
           <li>
-            <CustomLink path="/dashboard/analytics">Analytics</CustomLink>
+            <CustomLink  path="/dashboard/analytics">Analytics</CustomLink>
             {/* <Link href="/dashboard/analytics">Analytics</Link> */}
           </li>
           <li>
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
             <CustomLink path="/dashboard/profileA">Profile-A</CustomLink>
           </li>
           <li>
-            <CustomLink path="/heavy">Heavy</CustomLink>
+            <CustomLink prefetch={false} path="/heavy">Heavy</CustomLink>
           </li>
           <li>
             <CustomLink path="/blogs">BlogList</CustomLink>

@@ -2,10 +2,10 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function CustomLink({path,children}) {
+export default function CustomLink({path,children,prefetch=true}) {
     const pathName =usePathname()
     const active=pathName===path;
   return (
-    <Link className={active ? "text-cyan-300  && font-mono" :" "} href={path}>{children}</Link>
+    <Link prefetch={prefetch} className={active ? "text-cyan-300  && font-mono" :" "} href={path}>{children}</Link>
   )
 }
