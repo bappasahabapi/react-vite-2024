@@ -7,6 +7,8 @@ npm run dev
 yarn dev
 
 ```
+#    [Live Link](https://nextjs-14-basic-routing.vercel.app/)
+## [Github Branch](https://github.com/bappasahabapi/Nextjs-14-basic-routing)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
