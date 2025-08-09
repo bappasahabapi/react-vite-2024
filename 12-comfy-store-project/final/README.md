@@ -1,6 +1,8 @@
-userName: admin10
-email: admin10@gmail.com
-password:123456 
+## Login as 
+
+- userName: admin10
+- email: admin10@gmail.com
+- password:123456 
 
 ## Useful Project Resources
 
