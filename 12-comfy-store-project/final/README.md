@@ -1,3 +1,7 @@
+userName: admin10
+email: admin10@gmail.com
+password:123456 
+
 ## Useful Project Resources
 
 - [Complete Project](https://react-vite-comfy-store-v2.netlify.app/)
